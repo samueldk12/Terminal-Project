@@ -1,6 +1,9 @@
-from Classes.cli_client import CliClient
+from Classes.Client.cli_client import CliClient
+from Classes.Backend.config import Config
 
 def exec():
-    application = CliClient()
+    config = Config()
+    config_dict = config.get_config_dict()
+    application = CliClient(config_dict)
    
 exec()
