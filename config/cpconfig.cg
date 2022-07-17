@@ -5,7 +5,7 @@ window.background_color = #000
 window.icon = 'C:\Users\samuel.arao\projects\cli_project\Assets\Images\icon.ico'
 
 #terminal config
-terminal.config = %d  %O
+terminal.config = %n %O
 
 #text config
 text.auto_size = True

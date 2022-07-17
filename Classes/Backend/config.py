@@ -31,6 +31,6 @@ class Config():
                     else:
                         self.config_dict.update(last_words)
                     
-                print(self.config_dict)
+                
              
                             
