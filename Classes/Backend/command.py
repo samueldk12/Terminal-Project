@@ -5,7 +5,6 @@ class Command():
     def __init__(self,command):
         self.command = self.get_command(command)
         self.params  = self.get_params(command)
-        print(self.command,self.params)
         self.result  = self.process_result(self.command,self.params)
 
     def get_result(self):
