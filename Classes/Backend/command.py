@@ -18,13 +18,16 @@ class Command():
 
     def process_result(self,command, params):
         import importlib
-        module = importlib.import_module(f'Classes.Backend.{command.lower()}')
-        command_class = getattr(module , command)
-        instance = command_class(params)
-        result = None
-        while not result:
-           result =  instance.result
-        return result
+        try:
+            module = importlib.import_module(f'Classes.Backend.{command.lower()}')
+            command_class = getattr(module , command)
+            instance = command_class(params)
+            result = None
+            while not result:
+               result =  instance.result
+            return result
+        except:
+            return "Invalid Command"
 
 
     
