@@ -20,9 +20,9 @@ class Config():
                     value = value.replace('\n','').replace('\\','\\\\').strip()
                     len_keys = len(key.split('.'))
                     if "'" not in value:
-                        last_words += r"'" + value + "'" + "}" * len_keys
+                        last_words += "'" + value + "'" + "}" * len_keys
                     else:
-                        last_words +=  value + r"}" * len_keys 
+                        last_words +=  value + "}" * len_keys 
                     
                     last_words = dict(eval(last_words))
                     first_key_lw = list(last_words.keys())[0]
