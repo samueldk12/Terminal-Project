@@ -1,5 +1,5 @@
-# CLI-Project
-Criação de um CLI em python, criado com intuito de estudo. O Terminal foi utilizado `PySimpleGUI` para fazer a interface, e no backend foi utilizado Python puro. Na versão 1.0.0 foi criado a interface e o comando `Com` que roda comandos de prompt, como por exemplo `whoami`.
+# Terminal-Project
+Criação de um Terminal em python, criado com intuito de estudo. O Terminal foi utilizado `PySimpleGUI` para fazer a interface, e no backend foi utilizado Python puro. Na versão 1.0.0 foi criado a interface e o comando `Com` que roda comandos de prompt, como por exemplo `whoami`.
 
 #Configuração
 
